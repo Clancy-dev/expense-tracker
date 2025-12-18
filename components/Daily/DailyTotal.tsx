@@ -5,7 +5,7 @@ export default function DailyTotal({totalDailyExpenses,totalDailyExpensesPerMont
 
    
   return (
-    <div className='w-full h-full flex flex-col gap-1 p-2.5 border-t-2 border-gray-300'>
+    <div className='w-full h-full flex flex-col p-2.5 border-t-2 border-gray-300'>
         <div className='w-full h-[32%]  px-2 md:px-4'>
         <div className='w-full h-full flex  items-center justify-center  rounded'>
             <div className='w-[70%] md:w-[40%] h-full   flex items-center justify-end px-1 font-bold text-gray-800'>
