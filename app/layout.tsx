@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import MenuPopUp from "@/components/MenuPopUp";
+import MenuPopUpProvider from "@/context/MenuPopUpProvider";
 
 
 const geistSans = Geist({
@@ -29,8 +31,12 @@ export default function RootLayout({
       <body
         className={`mt-[10vh] relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <MenuPopUpProvider>
+        <MenuPopUp/>
         <Header/>     
         {children}
+        </MenuPopUpProvider>
+        
       </body>
     </html>
   );
