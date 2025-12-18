@@ -132,7 +132,7 @@ export default function Home() {
 
 
   return (
-     <div className='w-full h-full relative'>
+     <div className='w-full h-full relative bg-gray-300'>
       {/* header 2 */}
       <Header2 setActiveTab={setActiveTab} activeTab={activeTab}/>
 
