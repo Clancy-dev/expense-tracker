@@ -9,7 +9,7 @@ export default function ThreeMonthsTotal({totalThreeMonthsExpenses,coveredThreeM
         <div className='w-full h-[32%]  px-2 md:px-4'>
         <div className='w-full h-full flex  items-center justify-center  rounded'>
             <div className='w-[70%] md:w-[40%] h-full  flex items-center justify-end px-1 font-bold text-gray-800'>
-                Total Expenses(per 3 months) :
+                Total Expenses(3 months):
 
             </div>
             
