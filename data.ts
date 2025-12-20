@@ -483,7 +483,7 @@ export const expenseDataByLifestyle = {
     {
         id:24,
         image:"/tea leaves.jpeg",
-        title:"Tea leaves | Coffee | Hibiscus Flower",
+        title:"Tea | Coffee | Hibiscus Flower",
         price:4000,
         details:"none"
     },
@@ -581,7 +581,7 @@ export const expenseDataByLifestyle = {
        {
         id: 38,
         image: "/repair.jpeg",
-        title: "Repairs | Maintenance | Tear",
+        title: "Repairs | Wear & Tear",
         price: 50000,
         details: "none",
       }
