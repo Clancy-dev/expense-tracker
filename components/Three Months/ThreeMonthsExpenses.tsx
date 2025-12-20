@@ -1,26 +1,21 @@
 "use client"
 import React, { useState } from 'react'
-import { DailyExpenseData, MonthlyExpenseData, ThreeMonthsExpenseData } from '@/data'
 import { Briefcase, BriefcaseBusiness } from 'lucide-react'
 import { DailyExpenseTypes, MonthlyExpenseTypes, ThreeMonthsExpenseTypes } from '@/types'
 import ThreeMonthsExpense from './ThreeMonthsExpense'
 import PopUpMenuThreeMonths from './PopUpMenuThreeMonths'
 
 
-export default function ThreeMonthsExpenses({toggleCovered4,coveredIds4}:any) {
+export default function ThreeMonthsExpenses({ThreeMonthsExpenseData,toggleCovered4,coveredIds4}:{ThreeMonthsExpenseData: ThreeMonthsExpenseTypes[],toggleCovered4: (id: number) => void,coveredIds4: number[];}) {
     
-    const [selectedExpense4, setSelectedExpense4] = useState<ThreeMonthsExpenseTypes | null>(null)
-    
-
-  
-
-
+    const [selectedExpense4, setSelectedExpense4] = useState<ThreeMonthsExpenseTypes | null>(null);
+ 
   return (
-    <div className='w-full h-full mt-[18vh] md:mt-[19vh] flex flex-col gap-1 md:px-4  bg-gray-300'>
+    <div className='w-full h-[45vh] mt-[18vh] md:mt-[19vh] p-2 md:px-4'>
        
         {
             ThreeMonthsExpenseData.length>0?(
-            <div className='w-full min-h-[50%] bg-gray-300 rounded px-4 py-2 flex flex-col gap-2'>
+            <div className='w-full h-full bg-gray-300 rounded px-4 py-2 flex flex-col gap-2 overflow-y-auto'>
 
             {
                 ThreeMonthsExpenseData.map((expense)=>(

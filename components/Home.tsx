@@ -1,10 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import DailyExpenses from './Daily/DailyExpenses'
 import PopUpMenu from './Daily/PopUpMenuDaily'
 import { DailyExpenseTypes } from '@/types'
 import DailyTotal from './Daily/DailyTotal'
-import { DailyExpenseData, MonthlyExpenseData, ThreeMonthsExpenseData, WeeklyExpenseData } from '@/data'
+import { expenseDataByLifestyle } from '@/data'
 import Header2 from './Header2'
 import Header from './Header'
 import WeeklyExpenses from './Weekly/WeeklyExpenses'
@@ -14,6 +14,7 @@ import MonthlyTotal from './Monthly/MonthlyTotal'
 import ThreeMonthsTotal from './Three Months/ThreeMonthsTotal'
 import ThreeMonthsExpenses from './Three Months/ThreeMonthsExpenses'
 import GrandTotal from './Grand Total/GrandTotal'
+import { useLifestyle } from '@/context/LifestyleContext'
 
 
 export default function Home() {
@@ -22,6 +23,23 @@ export default function Home() {
    const [coveredIds3, setCoveredIds3] = useState<number[]>([])
    const [coveredIds4, setCoveredIds4] = useState<number[]>([])
    const [activeTab,setActiveTab] = useState<string>("tab1");
+
+   const { lifestyle } = useLifestyle();
+
+   const lifestyleData = expenseDataByLifestyle[lifestyle];
+
+   const DailyExpenseData = lifestyleData.daily;
+   const WeeklyExpenseData = lifestyleData.weekly;
+   const MonthlyExpenseData = lifestyleData.monthly;
+   const ThreeMonthsExpenseData = lifestyleData.threeMonths;
+
+   useEffect(() => {
+  setCoveredIds([]);
+  setCoveredIds2([]);
+  setCoveredIds3([]);
+  setCoveredIds4([]);
+}, [lifestyle]);
+   
 
 
   /*********************
@@ -132,32 +150,32 @@ export default function Home() {
 
 
   return (
-     <div className='w-full h-full relative bg-gray-300'>
+     <div className='w-full h-full relative bg-gray-300 pt-1'>
       {/* header 2 */}
       <Header2 setActiveTab={setActiveTab} activeTab={activeTab}/>
 
       {/* Tabs Body */}
       {
         activeTab==="tab1" && (
-           <DailyExpenses toggleCovered={toggleCovered} coveredIds={coveredIds} />
+           <DailyExpenses DailyExpenseData={DailyExpenseData} toggleCovered={toggleCovered} coveredIds={coveredIds} />
         )
       }
 
       {
         activeTab==="tab2" && (
-           <WeeklyExpenses toggleCovered2={toggleCovered2} coveredIds2={coveredIds2} />
+           <WeeklyExpenses WeeklyExpenseData={WeeklyExpenseData} toggleCovered2={toggleCovered2} coveredIds2={coveredIds2} />
         )
       }
 
        {
         activeTab==="tab3" && (
-           <MonthlyExpenses toggleCovered3={toggleCovered3} coveredIds3={coveredIds3} />
+           <MonthlyExpenses MonthlyExpenseData={MonthlyExpenseData} toggleCovered3={toggleCovered3} coveredIds3={coveredIds3} />
         )
       }
 
        {
         activeTab==="tab4" && (
-           <ThreeMonthsExpenses toggleCovered4={toggleCovered4} coveredIds4={coveredIds4} />
+           <ThreeMonthsExpenses ThreeMonthsExpenseData={ThreeMonthsExpenseData} toggleCovered4={toggleCovered4} coveredIds4={coveredIds4} />
         )
       }
 

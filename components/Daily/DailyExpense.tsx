@@ -14,10 +14,10 @@ export default function DailyExpense({id,image,price,details,title,checked,onTog
 
 
   return (
-    <div className='max-w-full h-[25%] bg-white flex rounded'>
+    <div className='max-w-full h-14 bg-white flex rounded shrink-0'>
         {/* Expense Image */}
-        <div className='max-w-[15%] md:max-w-[5%] h-full flex items-center p-1 '>
-            <Image src={image} alt='lunch-image' width={500} height={500} className='max-w-full h-full rounded object-cover'/>        
+        <div className='w-[15%] md:w-[5%] h-14 flex items-center p-1 '>
+          <Image src={image} alt='lunch-image' width={100} height={100} className='w-full h-full rounded object-cover'/>        
         </div>
 
         {/* Expense Name */}

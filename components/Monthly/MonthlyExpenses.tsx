@@ -1,13 +1,11 @@
 "use client"
 import React, { useState } from 'react'
-import { DailyExpenseData, MonthlyExpenseData } from '@/data'
 import { Briefcase, BriefcaseBusiness } from 'lucide-react'
 import { DailyExpenseTypes, MonthlyExpenseTypes } from '@/types'
-import PopUpMenu from './PopUpMenuMonthly'
 import MonthlyExpense from './MonthlyExpense'
 import PopUpMenuMonthly from './PopUpMenuMonthly'
 
-export default function MonthlyExpenses({toggleCovered3,coveredIds3}:any) {
+export default function MonthlyExpenses({MonthlyExpenseData,toggleCovered3,coveredIds3}:{MonthlyExpenseData: MonthlyExpenseTypes[],toggleCovered3: (id: number) => void,coveredIds3: number[];}) {
     
     const [selectedExpense3, setSelectedExpense3] = useState<MonthlyExpenseTypes | null>(null)
     
@@ -16,11 +14,12 @@ export default function MonthlyExpenses({toggleCovered3,coveredIds3}:any) {
 
 
   return (
-    <div className='w-full h-full mt-[18vh] md:mt-[19vh] flex flex-col gap-1 md:px-4  bg-gray-300'>
+    <div className='w-full h-[45vh] mt-[18vh] md:mt-[19vh] p-2 md:px-4  '>
+        
        
         {
             MonthlyExpenseData.length>0?(
-            <div className='w-full min-h-[50%] bg-gray-300 rounded px-4 py-2 flex flex-col gap-2'>
+            <div className='w-full h-full bg-gray-300 rounded px-4 py-2 flex flex-col gap-2 overflow-y-auto '>
 
             {
                 MonthlyExpenseData.map((expense)=>(

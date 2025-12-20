@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import MenuPopUp from "@/components/MenuPopUp";
 import MenuPopUpProvider from "@/context/MenuPopUpProvider";
+import { LifestyleProvider } from "@/context/LifestyleContext";
 
 
 const geistSans = Geist({
@@ -26,17 +27,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
+
+
   return (
     <html lang="en">
       <body
         className={`mt-[10vh] relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <MenuPopUpProvider>
-        <MenuPopUp/>
-        <Header/>     
-        {children}
+          <LifestyleProvider>
+           <MenuPopUp/>
+           <Header/>     
+           {children}
+          </LifestyleProvider>  
         </MenuPopUpProvider>
-        
       </body>
     </html>
   );
