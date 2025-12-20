@@ -1,4 +1,3 @@
-import { DailyExpenseData } from '@/data'
 import React, { useState } from 'react'
 
 export default function DailyTotal({totalDailyExpenses,totalDailyExpensesPerMonth,coveredAmount,balance}:any) {
