@@ -24,7 +24,7 @@ export const expenseDataByLifestyle = {
         title: "Lunch",
         price: 3000,
         details: "none",
-      },
+      }
        
       
     ],
@@ -65,8 +65,131 @@ export const expenseDataByLifestyle = {
 
     threeMonths: [],
   },
-
   lifestyle2: {
+    daily: [
+      {
+        id: 1,
+        image: "/transport-image.jpg",
+        title: "Transport",
+        price: 5000,
+        details: "none",
+        
+      },
+       {
+        id: 2,
+        image: "/breakfast-image.jpg",
+        title: "Breakfast",
+        price: 2000,
+        details: "none",
+      },
+       {
+        id: 3,
+        image: "/lunch-image.jpg",
+        title: "Lunch",
+        price: 5000,
+        details: "none",
+      }, 
+      {    
+        id:4,
+        image:"/supper-image.jpg",
+        title:"Supper",
+        price: 4000,
+        details:"none"
+    }
+       
+      
+    ],
+
+    weekly: [],
+
+    monthly: [
+      {
+        id: 1,
+        image: "/smartphone.jpeg",
+        title: "Smartphone loan",
+        price: 120000,
+        details: "none",
+      },
+      {
+        id: 2,
+        image: "/hair.jpg",
+        title: "Hair",
+        price: 2000,
+        details: "none",
+      },
+       {
+        id: 3,
+        image: "/internet.jpeg",
+        title: "Mobile Data",
+        price: 10000,
+        details: "none",
+      },
+      {
+        id: 4,
+        image: "/medical.jpeg",
+        title: "Medical Expenses",
+        price: 100000,
+        details: "none",
+      },
+      {
+        id:5,
+        image: "/development.png",
+        title: "Development Fee",
+        price: 100000,
+        details:"none"
+
+    },
+     {
+        id: 6,
+        image: "/rental.jpeg",
+        title: "Rent",
+        price: 300000,
+        details: "none",
+      },
+       {
+        id:7,
+        image:"/savings.jpeg",
+        title:"Savings",
+        price: 100000,
+        details:"none"
+    },
+    {
+        id:8,
+        image: "/mum and dad.png",
+        title: "Mummy | Daddy",
+        price: 100000,
+        details: "none"
+    },
+    {
+        id:9,
+        image:"/siblings.jpeg",
+        title:"Siblings",
+        price:50000,
+        details:"none"
+
+    },
+      {
+        id: 10,
+        image: "/unknown.jpeg",
+        title: "Unknown Things",
+        price: 22000,
+        details: "none",
+      }
+     
+    ],
+
+    threeMonths: [
+        {
+        id: 1,
+        image: "/unknown.jpeg",
+        title: "Sample",
+        price: 22000,
+        details: "",
+      }
+    ],
+  },
+
+  lifestyle3: {
     daily: [
          {
         id: 1,
@@ -401,7 +524,6 @@ export const expenseDataByLifestyle = {
         title:"Mummy | Daddy",
         price:100000,
         details:"none"
-
     },
      {
         id:13,
@@ -591,7 +713,7 @@ export const expenseDataByLifestyle = {
     threeMonths: [],
   },
 
-  lifestyle3:{ 
+  lifestyle4:{ 
      daily: [
       {
         id: 1,
@@ -902,7 +1024,7 @@ export const expenseDataByLifestyle = {
       },],
   },
 
-  lifestyle4: {
+  lifestyle5: {
     daily: [
          {
         id: 1,
@@ -932,7 +1054,6 @@ export const expenseDataByLifestyle = {
         title:"Supper",
         price:4000,
         details:"none"
-    
     }
      
     ],
