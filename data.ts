@@ -183,7 +183,7 @@ export const expenseDataByLifestyle = {
         id: 1,
         image: "/unknown.jpeg",
         title: "Sample",
-        price: 22000,
+        price: 0,
         details: "",
       }
     ],
@@ -1537,3 +1537,237 @@ export const expenseDataByLifestyle = {
 
 
 }
+
+
+
+
+
+
+
+
+export const ProductsData = [
+   {
+    id:1,
+    productCategory:"Product 1",
+    name:"Hotel Website",
+    type:[
+      {
+        basic:"Basic Hotel Website - 1.5m"
+      },
+      {
+        standard:"Standard Hotel Website - 3m"
+      },
+      {
+        premium:"Premium Hotel Website - 10m"
+      }
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      {
+        id:2,
+        channelName:"TikTok",
+        email:"clancyssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      }
+    ]
+
+
+  },
+   {
+    id:2,
+    productCategory:"Product 2",
+    name:"Hotel Management System",
+    type:[
+      {
+        basic:"Hotel Management System (1 Hotel) - 25m"
+      },
+      {
+        standard:"Hotel Management System (Multi - Hotel) - 50m"
+      },
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+   {
+    id:3,
+    productCategory:"Product 3",
+    name:"Rent Management System",
+    type:[
+      {
+        basic:"Rent Management System (1–5 units) - UGX 3M, (6–10 units) - UGX 5M, (11–20 units) - 7.5M, (21–40 units) - UGX 10M, (40+ units) - 20M "
+      },
+      {
+        standard:"Upgrades (Automated SMS Reminders) - 2M, (Payment integration in MoMo / bank) - 4M, (Advanced financial reports) - 1M "
+      },
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+   {
+    id:4,
+    productCategory:"Product 4",
+    name:"School Website",
+    type:[
+      {
+        basic:"Basic School Website - 1.5m"
+      },
+      {
+        standard:"Standard School Website - 3m"
+      },
+      {
+        premium:"Premium School Website - 10m"
+      },
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+   {
+    id:5,
+    productCategory:"Product 5",
+    name:"Charity Website",
+    type:[
+      {
+        basic:"Basic Charity Website - 1.5m"
+      },
+      {
+        standard:"Standard Charity Website - 3m"
+      },
+      {
+        premium:"Premium Charity Website - 10m"
+      },
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+   {
+    id:6,
+    productCategory:"Product 6",
+    name:"School Management System",
+    type:[
+      {
+        basic:"Basic School Management System (1-500 students) - 5m"
+      },
+      {
+        standard:"Standard School Management System (500–1,500 students) - 10m"
+      },
+      {
+        premium:"Premium School Management System (1,500+ students) - 25m"
+      },
+      {
+        upgrades:"Online Payments(MoMo/Bank) - 4m, SMS reminders - 2M"
+      },
+      {
+        advanced:"Multi - School Management System - 50m"
+      },
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+   {
+    id:7,
+    productCategory:"Product 7",
+    name:"Clinic / Hospital Management System",
+    type:[
+      {
+        basic:"Basic Clinic / Hospital Management System - 5m"
+      },
+      {
+        standard:"Standard Clinic / Hospital Management System - 10m"
+      },
+      {
+        premium:"Premium Clinic / Hospital Management System - 25m"
+      },
+      {
+        upgrades:"Online Payments(MoMo/Bank) - 4m, SMS reminders - 2M"
+      },
+      {
+        advanced:"Multi - Clinic/Hospital Management System - 50m"
+      },
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"cssekisambu@gmail.com",
+        userName:"clancyssekisambu",
+        password:"Clancyro1789@"
+      },
+      
+    ]
+
+
+  },
+]
+ 
