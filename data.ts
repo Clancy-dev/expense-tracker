@@ -1600,7 +1600,7 @@ export const ProductsData = [
         id:1,
         channelName:"TikTok",
         email:"cssekisambu@gmail.com",
-        userName:"clancyssekisambu",
+        userName:"clancyssekisambu2",
         password:"Clancyro1789@"
       },
       
@@ -1613,7 +1613,7 @@ export const ProductsData = [
     productCategory:"Product 3",
     name:"Rent Management System",
     type:[
-      {
+      { 
         basic:"Rent Management System (1–5 units) - UGX 3M, (6–10 units) - UGX 5M, (11–20 units) - 7.5M, (21–40 units) - UGX 10M, (40+ units) - 20M "
       },
       {
@@ -1655,9 +1655,16 @@ export const ProductsData = [
     tabledata:[
       {
         id:1,
+        channelName:"Email",
+        email:"senaindo28@gmail.com",
+        userName:"Schools Web Email",
+        password:"S3n@Ind0!28"
+      },
+      {
+        id:2,
         channelName:"TikTok",
-        email:"cssekisambu@gmail.com",
-        userName:"clancyssekisambu",
+        email:"senaindo28@gmail.com",
+        userName:"clancyschoolwebsites",
         password:"Clancyro1789@"
       },
       
@@ -1684,10 +1691,17 @@ export const ProductsData = [
 
     tabledata:[
       {
-        id:1,
+        id:1,  
+        channelName:"Email",
+        email:"senaindo29@gmail.com",
+        userName:"Charity Email",
+        password:"S3n@Ind0!29"
+      },
+      {
+        id:2,  
         channelName:"TikTok",
-        email:"cssekisambu@gmail.com",
-        userName:"clancyssekisambu",
+        email:"senaindo29@gmail.com",
+        userName:"clancycharitysolutions",
         password:"Clancyro1789@"
       },
       
@@ -1722,9 +1736,16 @@ export const ProductsData = [
     tabledata:[
       {
         id:1,
+        channelName:"Email",
+        email:"adinarayanabalcha6@gmail.com",
+        userName:"School Email",
+        password:"Adi@1234"
+      },
+      {
+        id:2,
         channelName:"TikTok",
-        email:"cssekisambu@gmail.com",
-        userName:"clancyssekisambu",
+        email:"adinarayanabalcha6@gmail.com",
+        userName:"clacyschoolsystems",
         password:"Clancyro1789@"
       },
       
@@ -1735,16 +1756,16 @@ export const ProductsData = [
    {
     id:7,
     productCategory:"Product 7",
-    name:"Clinic / Hospital Management System",
+    name:"Clinic / Pharmacy / Hospital Management System",
     type:[
       {
-        basic:"Basic Clinic / Hospital Management System - 5m"
+        basic:"Basic Clinic / Pharmacy / Hospital Management System - 5m"
       },
       {
-        standard:"Standard Clinic / Hospital Management System - 10m"
+        standard:"Standard Clinic / Pharmacy / Hospital Management System - 10m"
       },
       {
-        premium:"Premium Clinic / Hospital Management System - 25m"
+        premium:"Premium Clinic / Pharmacy / Hospital Management System - 25m"
       },
       {
         upgrades:"Online Payments(MoMo/Bank) - 4m, SMS reminders - 2M"
@@ -1759,9 +1780,16 @@ export const ProductsData = [
     tabledata:[
       {
         id:1,
+        channelName:"Email",
+        email:"senaindo30@gmail.com",
+        userName:"Medical Email",
+        password:"S3n@Ind0!30"
+      },
+      {
+        id:2,
         channelName:"TikTok",
-        email:"cssekisambu@gmail.com",
-        userName:"clancyssekisambu",
+        email:"senaindo30@gmail.com",
+        userName:"clancymedicalsolutions",
         password:"Clancyro1789@"
       },
       
@@ -1769,5 +1797,161 @@ export const ProductsData = [
 
 
   },
+   {
+    id:8,
+    productCategory:"Product 8",
+    name:"Business Website",
+    type:[
+      {
+        basic:"Basic Business Website - 1.5m"
+      },
+      {
+        standard:"Standard Business Website - 3m"
+      },
+      {
+        premium:"Premium Business Website - 6m"
+      }
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"TikTok",
+        email:"clancyro1789@gmail.com",
+        userName:"clancybusinesssolutions",
+        password:"Clancyro1789@"
+      },
+      {
+        id:2,
+        channelName:"Youtube",
+        email:"clancyro1789@gmail.com",
+        userName:"clancyssekisambu",
+        password:"17891789"
+      },
+      
+    ]
+
+
+  },
+  {
+    id:9,
+    productCategory:"Product 9",
+    name:"E-commerce Website",
+    type:[
+      {
+        basic:"Basic Business Website - 1.5m"
+      },
+      {
+        standard:"Standard Business Website - 3m"
+      },
+      {
+        premium:"Premium Business Website - 6m"
+      }
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"Email",
+        email:"senaindougandalimited@gmail.com",
+        userName:"Ecommerce Email",
+        password:"Senaindo2014"
+      },
+      {
+        id:2,
+        channelName:"Tiktok",
+        email:"senaindougandalimited@gmail.com",
+        userName:"clancyecommercesolutions",
+        password:"Clancyro1789@"
+      },
+      
+      
+    ]
+
+
+  },
+  {
+    id:10,
+    productCategory:"Product 10",
+    name:"Supermarket / Shop Sales System - Point of Sale",
+    type:[
+      {
+        basic:"Basic Business Website - 1.5m"
+      },
+      {
+        standard:"Standard Business Website - 3m"
+      },
+      {
+        premium:"Premium Business Website - 6m"
+      }
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"Email",
+        email:"senaindougandaltd2014@gmail.com",
+        userName:"Supermarket / Shop Email",
+        password:"senaindo2014"
+      },
+      {
+        id:2,
+        channelName:"Tiktok",
+        email:"senaindougandaltd2014@gmail.com",
+        userName:"clancysupermarketweb",
+        password:"Clancyro1789@"
+      },
+      
+      
+    ]
+
+
+  },
+  {
+    id:11,
+    productCategory:"Product 11",
+    name:"Restaurant Sales System - Point of Sale",
+    type:[
+      {
+        basic:"Basic Business Website - 1.5m"
+      },
+      {
+        standard:"Standard Business Website - 3m"
+      },
+      {
+        premium:"Premium Business Website - 6m"
+      }
+      
+  
+    ],
+
+    tabledata:[
+      {
+        id:1,
+        channelName:"Email",
+        email:"senaindougandaltd@gmail.com",
+        userName:"Restuarant Email",
+        password:"senaindo2014"
+      },
+      {
+        id:2,
+        channelName:"Tiktok",
+        email:"senaindougandaltd2014@gmail.com",
+        userName:"clancyrestaurantsystems",
+        password:"Clancyro1789@"
+      },
+      
+      
+    ]
+
+
+  },
+
 ]
  
