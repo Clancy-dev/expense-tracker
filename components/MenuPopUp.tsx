@@ -21,6 +21,10 @@ export default function MenuPopUp() {
       linkname:"Income"
     },
     {
+      linkhref:"/development",
+      linkname:"Development"
+    },
+    {
       linkhref:"/goals",
       linkname:"Goals"
     },
