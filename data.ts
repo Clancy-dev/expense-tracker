@@ -79,102 +79,302 @@ export const expenseDataByLifestyle = {
         id: 2,
         image: "/breakfast-image.jpg",
         title: "Breakfast",
-        price: 2000,
+        price: 1000,
         details: "none",
       },
        {
         id: 3,
         image: "/lunch-image.jpg",
         title: "Lunch",
-        price: 5000,
+        price: 4000,
         details: "none",
       }, 
-      {    
-        id:4,
-        image:"/supper-image.jpg",
-        title:"Supper",
-        price: 4000,
-        details:"none"
-    }
+    
        
       
     ],
 
-    weekly: [],
+    weekly: [
+      {
+        id: 1,
+        image: "",
+        title: "Dried / Fresh Fish",
+        price: 10000,
+        details: "Once a week (Friday)",
+      },
+       
+       {
+        id: 2,
+        image: "",
+        title: "Cow Ofals",
+        price: 3000,
+        details: "Once a week - half a kilo (Saturday)",
+      },
+       {
+        id: 3,
+        image: "",
+        title: "Beef-Meat / Chicken",
+        price: 10000,
+        details: "Once a week - Half a kilo (Sunday)",
+      },
+      {
+        id: 4,
+        image: "",
+        title: "Onions",
+        price: 2000,
+        details: "Once a week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Tomatoes",
+        price: 2000,
+        details: "Once a week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Cabbage",
+        price: 500,
+        details: "One each week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Matooke",
+        price: 3000,
+        details: "Once each week",
+      },
+       {
+        id: 5,
+        image: "",
+        title: "Sweet Potatoes / Cassava",
+        price: 3000,
+        details: "Once each week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Carrots",
+        price: 500,
+        details: "Once each week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Ginger",
+        price: 500,
+        details: "Once each week",
+      },
+      {
+        id: 5,
+        image: "",
+        title: "Green Paper",
+        price: 500,
+        details: "Once each week",
+      },
+        
+
+    ],
 
     monthly: [
       {
         id: 1,
-        image: "/smartphone.jpeg",
-        title: "Smartphone loan",
-        price: 120000,
+        image: "/hair.jpg",
+        title: "Hair",
+        price: 3000,
         details: "none",
       },
       {
         id: 2,
-        image: "/hair.jpg",
-        title: "Hair",
-        price: 2000,
+        image: "",
+        title: "Royco",
+        price: 3000,
+        details: "none",
+      },
+      {
+        id: 3,
+        image: "",
+        title: "Tithe",
+        price: 150000,
         details: "none",
       },
        {
-        id: 3,
+        id: 4,
+        image: "",
+        title: "Sugar",
+        price: 8000,
+        details: "2 kilos of sugar - 4 halfs",
+      },
+       { 
+        id: 5,
+        image: "",
+        title: "Shoe Polish",
+        price: 5000,
+        details: "none",
+      },
+       {
+        id: 6,
+        image: "",
+        title: "Tea Leaves (Majani)",
+        price: 2000,
+        details: "none",
+      },
+      {
+        id: 7,
+        image: "",
+        title: "Coffee",
+        price: 2000,
+        details: "none",
+      },
+      {
+        id: 8,
+        image: "",
+        title: "Toothpaste",
+        price: 3000,
+        details: "none",
+      },
+       {
+        id: 9,
         image: "/internet.jpeg",
         title: "Mobile Data",
         price: 10000,
         details: "none",
       },
       {
-        id: 4,
+        id: 10,
         image: "/medical.jpeg",
         title: "Medical Expenses",
-        price: 100000,
+        price: 50000,
         details: "none",
       },
-      {
-        id:5,
-        image: "/development.png",
-        title: "Development Fee",
-        price: 100000,
-        details:"none"
-
-    },
      {
-        id: 6,
+        id: 11,
         image: "/rental.jpeg",
         title: "Rent",
         price: 300000,
         details: "none",
       },
-       {
-        id:7,
-        image:"/savings.jpeg",
-        title:"Savings",
-        price: 100000,
-        details:"none"
-    },
     {
-        id:8,
+        id:12,
         image: "/mum and dad.png",
         title: "Mummy | Daddy",
         price: 100000,
         details: "none"
     },
-    {
-        id:9,
-        image:"/siblings.jpeg",
-        title:"Siblings",
-        price:50000,
-        details:"none"
-
-    },
-      {
-        id: 10,
-        image: "/unknown.jpeg",
-        title: "Unknown Things",
-        price: 22000,
+     {
+        id: 13,
+        image: "",
+        title: "Posho (Sack)",
+        price: 11000,
         details: "none",
-      }
+      },
+      {
+        id: 14,
+        image: "",
+        title: "Garlic",
+        price: 2000,
+        details: "2 packets for whole month",
+      },
+      {
+        id: 15,
+        image: "",
+        title: "Rice (Sack)",
+        price: 45000,
+        details: "none",
+      },
+      {
+        id: 16,
+        image: "",
+        title: "Whitestar Soap",
+        price: 14000,
+        details: "3500 * 4 pieces of Whitestar soap",
+      },
+       {
+        id: 17,
+        image: "",
+        title: "Cooking Oil",
+        price: 14000,
+        details: "3500 * 4 packets of Cooking Oil",
+      },
+       {
+        id: 18,
+        image: "",
+        title: "Matchbox",
+        price: 1000,
+        details: "none",
+      },
+      {
+        id: 19,
+        image: "",
+        title: "Salt",
+        price: 2000,
+        details: "1000 * 2 packets of Salt",
+      },
+       {
+        id: 20,
+        image: "",
+        title: "Toilet Paper",
+        price: 16000,
+        details: "For the whole month (3o pieces)",
+      },
+       {
+        id: 21,
+        image: "",
+        title: "Gas",
+        price: 60000,
+        details: "",
+      },
+       {
+        id: 22,
+        image: "",
+        title: "G-nut paste",
+        price: 7000,
+        details: "2 half kilos but divided into 4 parts ie half of a half each",
+      },
+       {
+        id: 23,
+        image: "",
+        title: "Yellow beans",
+        price: 12000,
+        details: "2 kilos but divided into 4 parts ie half of a half each",
+      },
+      {
+        id: 24,
+        image: "",
+        title: "Cow Peas",
+        price: 12000,
+        details: "2 kilos but divided into 4 parts ie half of a half each",
+      },
+      {
+        id: 25,
+        image: "",
+        title: "Brown beans",
+        price: 12000,
+        details: "2 kilos but divided into 4 parts ie half of a half each",
+      },
+      {
+        id: 26,
+        image: "",
+        title: "Yellow beans",
+        price: 12000,
+        details: "2 kilos but divided into 4 parts ie half of a half each",
+      },
+      {
+        id: 27,
+        image: "",
+        title: "Electricity",
+        price: 30000,
+        details: "none",
+      },
+      {
+        id: 28,
+        image: "",
+        title: "Water",
+        price: 50000,
+        details: "none",
+      },
+      
      
     ],
 
@@ -197,7 +397,7 @@ export const expenseDataByLifestyle = {
         title: "Transport",
         price: 5000,
         details: "none",
-        
+         
       },
        {
         id: 2,
