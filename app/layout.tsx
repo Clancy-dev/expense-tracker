@@ -34,12 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`mt-[10vh] relative ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <MenuPopUpProvider>
           <LifestyleProvider>
            <MenuPopUp/>
-           <Header/>     
+           {/* <Header/>      */}
            {children}
           </LifestyleProvider>  
         </MenuPopUpProvider>

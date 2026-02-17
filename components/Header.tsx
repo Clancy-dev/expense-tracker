@@ -13,6 +13,10 @@ export default function Header() {
   const {setOpen} = useMenuPopUp();
   
 const allLinks = [
+   {
+      linkhref:"/routine",
+      linkname:"Routine"
+    },
     {
       linkhref:"/",
       linkname:"Expense"
@@ -28,10 +32,6 @@ const allLinks = [
     {
       linkhref:"/plans",
       linkname:"Plans"
-    },
-    {
-      linkhref:"/routine",
-      linkname:"Routine"
     },
     {
       linkhref:"/lifestyle",
