@@ -26,8 +26,12 @@ const allLinks = [
       linkname:"Development"
     },
     {
-      linkhref:"/goals",
-      linkname:"Goals"
+      linkhref:"/plans",
+      linkname:"Plans"
+    },
+    {
+      linkhref:"/routine",
+      linkname:"Routine"
     },
     {
       linkhref:"/lifestyle",
@@ -60,7 +64,7 @@ const allLinks = [
         {/* By default it is hidden */}
         <div className='w-full  h-20 px-4 hidden md:flex items-center justify-between'>
           {
-            allLinks.map((singleLink)=>(
+            allLinks.map((singleLink)=>(  
                <Link href={singleLink.linkhref} key={singleLink.linkhref} className={`px-4 py-2 ${pathname===singleLink.linkhref?"bg-blue-400 text-white":""} rounded text-black`}>{singleLink.linkname}</Link>
             ))
           }

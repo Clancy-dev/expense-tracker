@@ -1902,7 +1902,7 @@ export const ProductsData = [
         channelName:"TikTok",
         email:"senaindo29@gmail.com",
         userName:"clancycharitysolutions",
-        password:"Clancyro1789@"
+        password:"Clancyro1789@" 
       },
       
     ]
