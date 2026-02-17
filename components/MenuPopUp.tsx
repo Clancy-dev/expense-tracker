@@ -12,6 +12,10 @@ export default function MenuPopUp() {
   if(!open) return null;
 
   const allLinks = [
+   {
+      linkhref:"/routine",
+      linkname:"Routine"
+    },
     {
       linkhref:"/",
       linkname:"Expense"
