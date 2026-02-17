@@ -36,13 +36,13 @@ export default function RootLayout({
       <body
         className={` relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <MenuPopUpProvider>
+        {/* <MenuPopUpProvider> */}
           <LifestyleProvider>
            <MenuPopUp/>
            {/* <Header/>      */}
            {children}
           </LifestyleProvider>  
-        </MenuPopUpProvider>
+        {/* </MenuPopUpProvider> */}
       </body>
     </html>
   );
