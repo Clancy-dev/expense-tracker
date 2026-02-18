@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { useSidebar } from "@/components/ui/sidebar"
 import { IconCirclePlusFilled, IconMail, type Icon } from "@tabler/icons-react"
@@ -25,6 +26,13 @@ export function NavMain({
 }) {
   const pathname = usePathname()
   const { setOpen, isMobile } = useSidebar()
+
+  // 🔥 Automatically close sidebar when route changes (ONLY on mobile)
+  useEffect(() => {
+    if (isMobile) {
+      setOpen(false)
+    }
+  }, [pathname, isMobile, setOpen])
 
   return (
     <SidebarGroup>
@@ -61,24 +69,20 @@ export function NavMain({
 
             return (
               <SidebarMenuItem key={item.title}>
-                <Link href={item.url}>
-                  <SidebarMenuButton
-                    tooltip={item.title}
-                    onClick={() => {
-                      if (isMobile) {
-                        setOpen(false)
-                      }
-                    }}
-                    className={`cursor-pointer ${
-                      isActive
-                        ? "bg-muted text-primary font-medium"
-                        : ""
-                    }`}
-                  >
+                <SidebarMenuButton
+                  asChild
+                  tooltip={item.title}
+                  className={`cursor-pointer ${
+                    isActive
+                      ? "bg-muted text-primary font-medium"
+                      : ""
+                  }`}
+                >
+                  <Link href={item.url}>
                     {item.icon && <item.icon />}
                     <span>{item.title}</span>
-                  </SidebarMenuButton>
-                </Link>
+                  </Link>
+                </SidebarMenuButton>
               </SidebarMenuItem>
             )
           })}
