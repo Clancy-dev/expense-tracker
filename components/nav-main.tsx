@@ -1,5 +1,7 @@
 "use client"
 
+import { usePathname } from "next/navigation"
+import { useSidebar } from "@/components/ui/sidebar"
 import { IconCirclePlusFilled, IconMail, type Icon } from "@tabler/icons-react"
 
 import { Button } from "@/components/ui/button"
@@ -12,7 +14,6 @@ import {
 } from "@/components/ui/sidebar"
 import Link from "next/link"
 
-
 export function NavMain({
   items,
 }: {
@@ -22,9 +23,14 @@ export function NavMain({
     icon?: Icon
   }[]
 }) {
+  const pathname = usePathname()
+  const { setOpen, isMobile } = useSidebar()
+
   return (
     <SidebarGroup>
       <SidebarGroupContent className="flex flex-col gap-2">
+        
+        {/* Quick Create + Message */}
         <SidebarMenu>
           <SidebarMenuItem className="flex items-center gap-2">
             <SidebarMenuButton
@@ -34,6 +40,7 @@ export function NavMain({
               <IconCirclePlusFilled />
               <span>Quick Create</span>
             </SidebarMenuButton>
+
             <Button
               size="icon"
               className="size-8 group-data-[collapsible=icon]:opacity-0"
@@ -44,18 +51,39 @@ export function NavMain({
             </Button>
           </SidebarMenuItem>
         </SidebarMenu>
+
+        {/* Main Navigation */}
         <SidebarMenu>
-          {items.map((item) => (
-            <SidebarMenuItem key={item.title}>
-              <Link href={item.url}>
-              <SidebarMenuButton tooltip={item.title}>
-                {item.icon && <item.icon />}
-                <span>{item.title}</span>
-              </SidebarMenuButton>
-              </Link>
-            </SidebarMenuItem>
-          ))}
+          {items.map((item) => {
+            const isActive =
+              pathname === item.url ||
+              (item.url !== "/" && pathname.startsWith(item.url))
+
+            return (
+              <SidebarMenuItem key={item.title}>
+                <Link href={item.url}>
+                  <SidebarMenuButton
+                    tooltip={item.title}
+                    onClick={() => {
+                      if (isMobile) {
+                        setOpen(false)
+                      }
+                    }}
+                    className={`cursor-pointer ${
+                      isActive
+                        ? "bg-muted text-primary font-medium"
+                        : ""
+                    }`}
+                  >
+                    {item.icon && <item.icon />}
+                    <span>{item.title}</span>
+                  </SidebarMenuButton>
+                </Link>
+              </SidebarMenuItem>
+            )
+          })}
         </SidebarMenu>
+
       </SidebarGroupContent>
     </SidebarGroup>
   )

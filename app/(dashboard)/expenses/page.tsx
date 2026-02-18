@@ -1,12 +1,9 @@
-
-
 import Home from '@/components/Home'
 import React from 'react'
 
 export default function page() {
   return (
-    <div className=" my-font w-full h-[90vh]  flex items-center justify-center">
-     {/* Home */}
+    <div>
      <Home/>
   
     </div>

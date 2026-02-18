@@ -38,7 +38,7 @@ export default function RootLayout({
       >
         {/* <MenuPopUpProvider> */}
           <LifestyleProvider>
-           <MenuPopUp/>
+           {/* <MenuPopUp/> */}
            {/* <Header/>      */}
            {children}
           </LifestyleProvider>  
