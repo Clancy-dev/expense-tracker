@@ -32,23 +32,10 @@ export default function GrandTotal({totalDailyExpensesPerMonth,totalWeeklyExpens
                     Total Fixed Monthly Expenses:
 
                     </div>
-                    <div className='w-[30%] md:w-1/2  h-full flex items-center justify-start px-1 font-bold'>
-                    {totalMonthlyExpenses.toLocaleString()}
-
-                    </div>
+                   
 
                 </div>
-                <div className='w-full h-[7vh] flex bg-white rounded'>
-                    <div className='w-[70%] md:w-1/2 h-full flex items-center justify-end px-1 font-bold text-gray-800'>
-                    Total 3 Months Expenses:
-
-                    </div>
-                    <div className='w-[30%] md:w-1/2 h-full flex items-center justify-start px-1 font-bold'>
-                    {totalThreeMonthsExpenses.toLocaleString()}
-
-                    </div>
-
-                </div>
+                
                  <div className='w-full h-[8vh] flex bg-white rounded'>
                     <div className='w-[70%] md:w-1/2  flex items-center justify-end px-1 font-bold text-lg'>
                     Grand Total Expenses:
@@ -99,17 +86,7 @@ export default function GrandTotal({totalDailyExpensesPerMonth,totalWeeklyExpens
                     </div>
 
                 </div>
-                <div className='w-full h-[7vh] flex bg-white rounded'>
-                    <div className='w-[70%] md:w-1/2 h-full  flex items-center justify-end px-1 font-bold text-gray-800'>
-                    Total 3 Months Balance:
-
-                    </div>
-                    <div className={`${threeMonthsBalance===0?"text-black":"text-green-600"} w-[30%] md:w-1/2 h-full flex items-center justify-start px-1 font-bold `}>
-                    {threeMonthsBalance.toLocaleString()}
-
-                    </div>
-
-                </div>
+                
                  <div className='w-full h-[8vh] flex bg-white rounded'>
                     <div className='w-[70%] md:w-1/2 h-full  flex items-center justify-end px-1 font-bold text-lg '>
                     Grand Total Balance:

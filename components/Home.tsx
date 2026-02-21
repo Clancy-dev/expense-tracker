@@ -20,7 +20,7 @@ export default function Home() {
   const DailyExpenseData = lifestyleData.daily
   const WeeklyExpenseData = lifestyleData.weekly
   const MonthlyExpenseData = lifestyleData.monthly
-  const ThreeMonthsExpenseData = lifestyleData.threeMonths
+  
 
   useEffect(() => {
     setCoveredIds([])
@@ -59,18 +59,15 @@ export default function Home() {
   const coveredMonthlyAmount = MonthlyExpenseData.filter(item => coveredIds3.includes(item.id)).reduce((sum, item) => sum + item.price, 0)
   const monthlyBalance = totalMonthlyExpenses - coveredMonthlyAmount
 
-  const totalThreeMonthsExpenses = ThreeMonthsExpenseData.reduce((sum, item) => sum + item.price, 0)
-  const coveredThreeMonthsAmount = ThreeMonthsExpenseData.filter(item => coveredIds4.includes(item.id)).reduce((sum, item) => sum + item.price, 0)
-  const threeMonthsBalance = totalThreeMonthsExpenses - coveredThreeMonthsAmount
+  
 
-  const grandTotalExpenses = totalDailyExpensesPerMonth + totalWeeklyExpensesPerMonth + totalMonthlyExpenses + totalThreeMonthsExpenses
-  const grandTotalBalance = balance + weeklyBalance + monthlyBalance + threeMonthsBalance
+  const grandTotalExpenses = totalDailyExpensesPerMonth + totalWeeklyExpensesPerMonth + totalMonthlyExpenses 
+  const grandTotalBalance = balance + weeklyBalance + monthlyBalance 
 
   const tabs = [
     { id: 'daily', label: 'Daily' },
     { id: 'weekly', label: 'Weekly' },
     { id: 'monthly', label: 'Monthly' },
-    { id: 'threeMonths', label: '3 Months' },
     { id: 'grand', label: 'Grand Total' },
   ]
 
@@ -169,7 +166,7 @@ export default function Home() {
               <SummaryCard
                 label='Daily Expenses (Per Month)'
                 amount={totalDailyExpensesPerMonth}
-                subtext='30 days projected'
+                subtext='31 days projected'
               />
               <SummaryCard
                 label='Daily Balance'
@@ -256,36 +253,7 @@ export default function Home() {
           </div>
         )}
 
-        {activeTab === 'threeMonths' && (
-          <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-8'>
-              <SummaryCard
-                label='3 Months Expenses'
-                amount={totalThreeMonthsExpenses}
-                subtext='Quarterly costs'
-              />
-              <SummaryCard
-                label='3 Months Balance'
-                amount={threeMonthsBalance}
-                type={threeMonthsBalance > 0 ? 'positive' : threeMonthsBalance < 0 ? 'negative' : 'neutral'}
-              />
-            </div>
-            {ThreeMonthsExpenseData.length > 0 ? (
-              <div className='bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden'>
-                <ExpenseTable
-                  data={ThreeMonthsExpenseData}
-                  coveredIds={coveredIds4}
-                  onToggle={toggleCovered4}
-                  multiplier={1}
-                />
-              </div>
-            ) : (
-              <div className='bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center text-slate-500'>
-                No 3-month expenses
-              </div>
-            )}
-          </div>
-        )}
+       
 
         {activeTab === 'grand' && (
           <div>
@@ -365,25 +333,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='bg-white rounded-xl shadow-sm p-6 border border-slate-200'>
-                <h3 className='text-lg font-semibold text-slate-900 mb-4'>3 Months</h3>
-                <div className='space-y-2'>
-                  {ThreeMonthsExpenseData.map((expense: any) => {
-                    const isChecked = coveredIds4.includes(expense.id)
-                    const amount = isChecked ? expense.price : 0
-                    return (
-                      <div key={expense.id} className='flex justify-between text-sm'>
-                        <span className='text-slate-700'>• {expense.title}</span>
-                        <span className='font-medium text-slate-900'>UGX {amount.toLocaleString()}</span>
-                      </div>
-                    )
-                  })}
-                  <div className='border-t border-slate-200 pt-2 mt-3 flex justify-between font-semibold'>
-                    <span className='text-slate-900'>Grand 3 Months Balance</span>
-                    <span className='text-slate-900'>UGX {threeMonthsBalance.toLocaleString()}</span>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         )}
