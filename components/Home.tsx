@@ -164,12 +164,12 @@ export default function Home() {
           <div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-8'>
               <SummaryCard
-                label='Daily Expenses (Per Month)'
+                label='Total Daily Expenses (Per Month)'
                 amount={totalDailyExpensesPerMonth}
                 subtext='31 days projected'
               />
               <SummaryCard
-                label='Daily Balance'
+                label='Total Daily Balance (Per Month)'
                 amount={balance}
                 type={balance > 0 ? 'positive' : balance < 0 ? 'negative' : 'neutral'}
               />
@@ -195,12 +195,12 @@ export default function Home() {
           <div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-8'>
               <SummaryCard
-                label='Weekly Expenses (Per Month)'
+                label='Total Weekly Expenses (Per Month)'
                 amount={totalWeeklyExpensesPerMonth}
                 subtext='4.4 weeks average'
               />
               <SummaryCard
-                label='Weekly Balance'
+                label='Total Weekly Balance (Per Week)'
                 amount={weeklyBalance}
                 type={weeklyBalance > 0 ? 'positive' : weeklyBalance < 0 ? 'negative' : 'neutral'}
               />
@@ -226,12 +226,12 @@ export default function Home() {
           <div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-8'>
               <SummaryCard
-                label='Monthly Expenses'
+                label='Total Fixed Monthly Expenses'
                 amount={totalMonthlyExpenses}
                 subtext='Fixed monthly costs'
               />
               <SummaryCard
-                label='Monthly Balance'
+                label='Total Fixed Monthly Balance'
                 amount={monthlyBalance}
                 type={monthlyBalance > 0 ? 'positive' : monthlyBalance < 0 ? 'negative' : 'neutral'}
               />

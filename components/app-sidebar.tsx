@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import {
+  IconBrain,
   IconCalendar,
   IconCalendarCheck,
   IconCamera,
@@ -157,6 +158,11 @@ const data = {
     },
   ],
   documents: [
+     {
+      name: "Sales Psychcology",
+      url: "/salesPsychcology",
+      icon: IconBrain,
+    },
     {
       name: "Data Library",
       url: "#",

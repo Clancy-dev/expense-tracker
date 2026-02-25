@@ -75,37 +75,23 @@ export const expenseDataByLifestyle = {
       },
        {
         id: 2,
-        image: "/breakfast.png",
-        title: "Breakfast (Tea / Coffee) with escort",
-        price: 3000,
-        details: "none",
-      },
-       {
-        id: 3,
         image: "/lunch.jpg",
         title: "Lunch",
         price: 6000,
         details: "none",
       }, 
        {
-        id: 4,
+        id: 3,
         image: "/fruits.png",
         title: "Fruits",
         price: 2000,
         details: "none",
       }, 
       {
-        id: 5,
+        id: 4,
         image: "/water.png",
         title: "Rwenzori (1.5L)",
         price: 2000,
-        details: "none",
-      }, 
-       {
-        id: 6,
-        image: "/toilet.png",
-        title: "Toilet around Kampala",
-        price: 1000,
         details: "none",
       }, 
        {
@@ -260,53 +246,96 @@ export const expenseDataByLifestyle = {
     ],
 
     monthly: [
-      {
+       {
         id: 1,
-        image: "/hair.jpg",
-        title: "Hair",
-        price: 3000,
+        image: "/rental.jpeg",
+        title: "Rent",
+        price: 400000,
         details: "none",
       },
       {
         id: 2,
-        image: "",
-        title: "Royco",
-        price: 3000,
+        image: "/electricity.jpg",
+        title: "Electricity",
+        price: 50000,
         details: "none",
       },
-      {
+       {
         id: 3,
-        image: "",
-        title: "Tithe",
-        price: 150000,
+        image: "/water.jpg",
+        title: "Water",
+        price: 50000,
         details: "none",
       },
        {
         id: 4,
-        image: "",
-        title: "Sugar",
-        price: 8000,
-        details: "2 kilos of sugar - 4 halfs",
+        image: "/internet.png",
+        title: "Mobile Data ((8GB) No Expiry Chillax)",
+        price: 25000,
+        details: "none",
+      },
+        {
+        id: 5,
+        image: "/savanna.jpeg",
+        title: "Savanna Internet",
+        price: 73000,
+        details: "none"
+       },
+        {
+        id: 6,
+        image: "/airtime.png",
+        title: "Airtime",
+        price: 30000,
+        details: "none"
+       },
+      //  {
+      //   id: 7,
+      //   image: "",
+      //   title: "Tithe",
+      //   price: 150000,
+      //   details: "none",
+      // },
+      {
+        id: 1,
+        image: "/hair.jpg",
+        title: "Hair",
+        price: 5000,
+        details: "none",
+      },
+      {
+        id: 2,
+        image: "/royco.png",
+        title: "Royco",
+        price: 7000,
+        details: "none",
+      },
+      
+       {
+        id: 4,
+        image: "/sugar.jpeg",
+        title: "Sugar (5 halfs)",
+        price: 10000,
+        details: "none",
       },
        { 
         id: 5,
-        image: "",
+        image: "/shoe polish.jpeg",
         title: "Shoe Polish",
-        price: 5000,
+        price: 6000,
         details: "none",
       },
        {
         id: 6,
-        image: "",
+        image: "/tea leaves.jpeg",
         title: "Tea Leaves (Majani)",
-        price: 2000,
+        price: 4000,
         details: "none",
       },
       {
         id: 7,
-        image: "",
+        image: "/coffee.png",
         title: "Coffee",
-        price: 2000,
+        price: 4000,
         details: "none",
       },
       {
@@ -316,27 +345,15 @@ export const expenseDataByLifestyle = {
         price: 6000,
         details: "none",
       },
-       {
-        id: 9,
-        image: "/internet.jpeg",
-        title: "Mobile Data",
-        price: 10000,
-        details: "none",
-      },
+      
       {
-        id: 10,
+        id: 12,
         image: "/medical.jpeg",
         title: "Medical Expenses",
-        price: 50000,
+        price: 100000,
         details: "none",
       },
-     {
-        id: 11,
-        image: "/rental.jpeg",
-        title: "Rent",
-        price: 300000,
-        details: "none",
-      },
+    
     {
         id:12,
         image: "/mum and dad.png",
@@ -442,20 +459,8 @@ export const expenseDataByLifestyle = {
         price: 12000,
         details: "2 kilos but divided into 4 parts ie half of a half each",
       },
-      {
-        id: 27,
-        image: "",
-        title: "Electricity",
-        price: 30000,
-        details: "none",
-      },
-      {
-        id: 28,
-        image: "",
-        title: "Water",
-        price: 50000,
-        details: "none",
-      },
+      
+     
       
      
     ],
@@ -718,22 +723,15 @@ export const expenseDataByLifestyle = {
 
     ],
     monthly: [
-        {
+      {
         id: 1,
-        image: "/smartphone.jpeg",
-        title: "Smartphone loan",
-        price: 120000,
+        image: "/rental.jpeg",
+        title: "Rent",
+        price: 400000,
         details: "none",
       },
       {
         id: 2,
-        image: "/rental.jpeg",
-        title: "Rent",
-        price: 300000,
-        details: "none",
-      },
-      {
-        id: 3,
         image: "/hair.jpg",
         title: "Hair",
         price: 3000,
