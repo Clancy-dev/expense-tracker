@@ -471,6 +471,13 @@ export const expenseDataByLifestyle = {
         price: 10000,
         details: "none",
       },
+       {
+        id: 33,
+        image: "/medical.jpg",
+        title: "Medical Insurance",
+        price: 100000,
+        details: "none",
+      },
     //     {
     //     id:12,
     //     image: "/mum and dad.png",
@@ -766,7 +773,7 @@ export const expenseDataByLifestyle = {
       {
         id: 5,
         image: "/medical.jpeg",
-        title: "Medical Expenses",
+        title: "Medical Insurance",
         price: 100000,
         details: "none",
       },
