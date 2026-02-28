@@ -478,13 +478,99 @@ export const expenseDataByLifestyle = {
         price: 100000,
         details: "none",
       },
-    //     {
-    //     id:12,
-    //     image: "/mum and dad.png",
-    //     title: "Mummy | Daddy",
-    //     price: 100000,
-    //     details: "none"
-    // },
+       {
+        id: 34,
+        image: "",
+        title: "Mummy",
+        price: 200000,
+        details: "none",
+      },
+       {
+        id: 35,
+        image: "",
+        title: "Daddy",
+        price: 200000,
+        details: "none",
+      },
+       {
+        id: 36,
+        image: "",
+        title: "Siblings",
+        price: 53100,
+        details: "none",
+      },
+       {
+        id: 37,
+        image: "",
+        title: "Girlfriend",
+        price: 200000,
+        details: "none",
+      },
+        {
+        id: 38,
+        image: "",
+        title: "Fitness",
+        price: 300000,
+        details: "none",
+      },
+        {
+        id: 39,
+        image: "",
+        title: "Friends",
+        price: 50000,
+        details: "none",
+      },
+       {
+        id: 40,
+        image: "",
+        title: "Outings",
+        price: 200000,
+        details: "none",
+      },
+       {
+        id: 41,
+        image: "",
+        title: "Ware and Tare",
+        price: 50000,
+        details: "none",
+      },
+       {
+        id: 42,
+        image: "",
+        title: "Development",
+        price: 250000,
+        details: "none",
+      },
+       {
+        id: 43,
+        image: "",
+        title: "Laptop Insurance",
+        price: 50000,
+        details: "none",
+      },
+       {
+        id: 44,
+        image: "",
+        title: "Phone Insurance",
+        price: 50000,
+        details: "none",
+      },
+       {
+        id: 45,
+        image: "",
+        title: "Savings",
+        price: 150000,
+        details: "none",
+      },
+       {
+        id: 47,
+        image: "",
+        title: "Tithe",
+        price: 500000,
+        details: "none",
+      },
+
+   
       
      
       

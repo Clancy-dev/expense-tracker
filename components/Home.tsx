@@ -12,7 +12,15 @@ export default function Home() {
   const [coveredIds2, setCoveredIds2] = useState<number[]>([])
   const [coveredIds3, setCoveredIds3] = useState<number[]>([])
   const [coveredIds4, setCoveredIds4] = useState<number[]>([])
-  const [activeTab, setActiveTab] = useState<string>("daily")
+  const [activeTab, setActiveTab] = useState<string>(() => {
+  if (typeof window !== "undefined") {
+    return localStorage.getItem("activeTab") || "daily"
+  }
+  return "daily"
+})
+  useEffect(() => {
+  localStorage.setItem("activeTab", activeTab)
+}, [activeTab])
 
   const { lifestyle } = useLifestyle()
   const lifestyleData = expenseDataByLifestyle[lifestyle]
