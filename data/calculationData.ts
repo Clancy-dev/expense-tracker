@@ -227,6 +227,15 @@ export const calculationData: SpendingCategory[] = [
       },
       {
         day: "Whole Month",
+        itemName: "Bread (each @ 3000 for 5 weeks)",
+        week1: 15000,
+        week2: 0,
+        week3: 0,
+        week4: 0,
+        week5: 0,
+      },
+      {
+        day: "Whole Month",
         itemName: "Match box (2)",
         week1: 2000,
         week2: 0,

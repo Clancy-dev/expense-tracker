@@ -28,7 +28,7 @@ export default function SpendingTracker() {
       <div className="max-w-full mx-auto space-y-12">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-slate-900 mb-2">
-            Breakdown of Expenses
+            Calculation of Expenses
           </h1>
           <p className="text-slate-600">Weekly spending patterns by category</p>
         </div>
@@ -42,42 +42,39 @@ export default function SpendingTracker() {
             <div className="overflow-x-auto rounded-lg shadow-md border border-slate-200 bg-white">
               <Table>
                 {category.title === "Other Items" ? (
-                  <div>
-
-                  </div>
-                  // <>
-                  //   {/* Other Items - Simple 2 Column Layout */}
-                  //   <TableHeader>
-                  //     <TableRow className="bg-slate-100">
-                  //       <TableHead className="font-bold text-slate-900">
-                  //         Item
-                  //       </TableHead>
-                  //       <TableHead className="text-right font-bold text-slate-900 bg-blue-50 min-w-24">
-                  //         Total
-                  //       </TableHead>
-                  //     </TableRow>
-                  //   </TableHeader>
-                  //   <TableBody>
-                  //     {category.days.map((day, dayIndex) => (
-                  //       <TableRow key={dayIndex} className="hover:bg-slate-50 border-b">               
-                  //         <TableCell className="text-slate-700">
-                  //           {day.itemName}
-                  //         </TableCell>
-                  //         <TableCell className="text-right font-bold text-blue-900 bg-blue-50">
-                  //           {formatCurrency(calculateDayTotal(day))}
-                  //         </TableCell>
-                  //       </TableRow>
-                  //     ))}
-                  //     <TableRow className="bg-slate-200 font-bold">
-                  //       <TableCell colSpan={1} className="text-slate-900">
-                  //         Category Total
-                  //       </TableCell>
-                  //       <TableCell className="text-right text-slate-900">
-                  //         {formatCurrency(calculateCategoryTotal(category.days))}
-                  //       </TableCell>
-                  //     </TableRow>
-                  //   </TableBody>
-                  // </>
+                  <>
+                    {/* Other Items - Simple 2 Column Layout */}
+                    <TableHeader>
+                      <TableRow className="bg-slate-100">
+                        <TableHead className="font-bold text-slate-900">
+                          Item
+                        </TableHead>
+                        <TableHead className="text-right font-bold text-slate-900 bg-blue-50 min-w-24">
+                          Total
+                        </TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {category.days.map((day, dayIndex) => (
+                        <TableRow key={dayIndex} className="hover:bg-slate-50 border-b">               
+                          <TableCell className="text-slate-700">
+                            {day.itemName}
+                          </TableCell>
+                          <TableCell className="text-right font-bold text-blue-900 bg-blue-50">
+                            {formatCurrency(calculateDayTotal(day))}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                      <TableRow className="bg-slate-200 font-bold">
+                        <TableCell colSpan={1} className="text-slate-900">
+                          Category Total
+                        </TableCell>
+                        <TableCell className="text-right text-slate-900">
+                          {formatCurrency(calculateCategoryTotal(category.days))}
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </>
                 ) : (
                   
                   <>
@@ -111,7 +108,7 @@ export default function SpendingTracker() {
                             key={dayIndex}
                             className="text-center text-sm text-slate-700 font-medium"
                           >
-                            <div className="wrap-break-word text-ellipsis max-w-30 mx-auto">
+                            <div className="wrap-break-word text-ellipsis max-w-32 mx-auto">
                               {day.itemName}
                             </div>
                           </TableCell>
