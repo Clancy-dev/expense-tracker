@@ -25,7 +25,7 @@ export default function AccountsPage() {
               key={account.number}
               className="p-4 sm:p-6 hover:shadow-md transition-shadow duration-200 border-l-4 border-l-blue-500"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
                   <p className="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide mb-1">
                     Account Number
@@ -34,12 +34,20 @@ export default function AccountsPage() {
                     {account.number}
                   </p>
                 </div>
-                <div className="flex-1 sm:text-right">
+                <div>
                   <p className="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide mb-1">
                     Purpose
                   </p>
                   <p className="text-base sm:text-lg font-medium text-slate-700">
                     {account.purpose}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide mb-1">
+                    Minimum Amount
+                  </p>
+                  <p className={`text-base sm:text-lg font-medium ${account.minimumAmount === 'none' ? 'text-slate-500' : 'text-slate-900'}`}>
+                    {account.minimumAmount}
                   </p>
                 </div>
               </div>
